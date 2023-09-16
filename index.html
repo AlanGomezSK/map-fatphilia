@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="build/css/L.Control.Layers.Tree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="icon" href="build/img/logoIco.ico">
+    <title>Fatphilia®</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenido_header">
+            <nav class="navegador_principal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+                <div class="navegador_principal-logo">
+                    <a href="index.html"><img class="logoFatphilia" src="build/img/logoFatphilia.webp" alt=""></a>
+                </div>
+                <div class="navegador_principal-secciones ">
+                    <a href="index.html">inicio</a>
+                    <a href="contactanos.html">Contactanos</a>
+                </div>
+                <div class="navegador_principal-redes ">
+                    <a href=""><img src="build/img/Instagram-Logo-PNG-Free-Download-1.webp" alt=""></a>
+                    <a href=""><img src="build/img/png-transparent-tiktok-tiktok-logo-tiktok-icon-thumbnail-removebg-preview.webp" alt=""></a>
+                    <a href=""><img src="build/img/f66d49097e18978ddf46282c233040a9.webp" alt=""></a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <div class="galeria">
+        <img src="build/img/logoFatphilia-removebg-preview.webp" alt="">
+        <h1>Conoce todo en el mundo de la comida</h1>
+    </div>
+    <section class="recomendaciones">
+        <h1>Conoce cuales son los mejores restaurantes de Guadalajara</h1>
+        <h2>Conoce su precio, ubicacion y cantidad de estrellas fatphilia</h2>
+        <div class="filtros">
+            <div class="tipo_Defiltros-PorComida">
+                <label for="prueba">Filtrar Por Tipo de Comida</label>
+                <input name ="select" type="radio" id="prueba" class="tipo_Defiltros-PorComida-input">
+                <div class="tipo_Defiltros-PorComida-filtro">
+                    <label for="antojitosMexicanos">Antojitos Mexicanos</label>
+                    <input type="checkbox" id="antojitosMexicanos" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="cafeteria">Cafeteria</label>
+                    <input type="checkbox" id="cafeteria" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="brunch">Brunch</label>
+                    <input type="checkbox" id="brunch" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="hamburgesas">Hamburgesas</label>
+                    <input type="checkbox" id="hamburgesas" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="mariscos">Mariscos</label>
+                    <input type="checkbox" id="mariscos" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="pizzeria">Pizzeria</label>
+                    <input type="checkbox" id="pizzeria" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="taqueria">Taqueria</label>
+                    <input type="checkbox" id="taqueria" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="cortes">Cortes</label>
+                    <input type="checkbox" id="cortes" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="sushi">Sushi</label>
+                    <input type="checkbox" id="sushi" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="hamYhotDog">Hamburgesas y HotDogs</label>
+                    <input type="checkbox" id="hamYhotDog" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="cocinaOriental">Cocina Oriental</label>
+                    <input type="checkbox" id="cocinaOriental" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="bbqYAhu">BBQ y Ahumador</label>
+                    <input type="checkbox" id="bbqYAhu" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="tortasAhogadas">Tortas Ahogadas</label>
+                    <input type="checkbox" id="tortasAhogadas" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="menuderia">Menuderia</label>
+                    <input type="checkbox" id="menuderia" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="gusegeria">Gusegeria</label>
+                    <input type="checkbox" id="gusgeria" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="hotDogs">HotDogs</label>
+                    <input type="checkbox" id="hotDogs" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="alitas">Alitas</label>
+                    <input type="checkbox" id="alitas" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="panaderia">Panaderia</label>
+                    <input type="checkbox" id="panaderia" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="bar">Bar</label>
+                    <input type="checkbox" id="bar" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="nieves">Nieves</label>
+                    <input type="checkbox" id="nieves" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="lonches">Lonches</label>
+                    <input type="checkbox" id="lonches" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <label for="munchie">Munchie</label>
+                    <input type="checkbox" id="munchie" class="tipo_Defiltros-PorComida-filtro-input"><br>
+                    <p>Filtrar por ticket</p>
+                    <label for="precio1">De: </label>
+                    <input placeholder="Minimo" type="text" id="precio1" class="tipo_Defiltros-PorTicket-filtro-input"><br>
+                    <label for="precio2">a: </label>
+                    <input placeholder="Maximo" type="text" id="precio2" class="tipo_Defiltros-PorTicket-filtro-input"><br>
+                    <button onclick="filtrarMapa()">Filtrar</button>
+
+                </div>
+            </div>
+        </div>
+        <div id="map">
+        </div>
+    </section>
+    <footer>
+        <div class="contenido_header">
+            <p>Fatphilia®, Todos los derechos reservados </p>
+            <h2>contactanos</h2>
+            <ul>
+                <li><img src="build/img/gmail.webp" alt="">fatphilia@gmail.com</li>
+                <li><img src="build/img/whatsapp(1).webp" alt="">3318367012</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="build/js/data.js"></script>
+    <script src="build/js/mapa.js"></script>
+    <script src="build/js/app.js"></script>
+</body>
+</html>
