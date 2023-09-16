@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/estadisticas.scss","layout/estadisticas.css"],"names":[],"mappings":"AAII,kCACI,UCAR","file":"estadisticas.css","sourcesContent":[".estadisticas{\r\n    h1{\r\n        color: white;\r\n    }\r\n    h3{\r\n        color: #ffffff;\r\n    }\r\n}",".estadisticas h1 {\n  color: white;\n}\n.estadisticas h3 {\n  color: #ffffff;\n}"]}
